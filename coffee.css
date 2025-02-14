@@ -1,0 +1,485 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --main-color: #3B2314;
+  --secondary-color: #D9A86C;
+  --neutral-color: #FCF6E6;
+  --main-font: 'Playfair Display', serif;
+  --secondary-font: 'Poppins', sans-serif;
+}
+
+/*Utility Styles*/
+button {
+  padding:1.5rem;
+  background: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+
+/*Resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: var(--secondary-font);
+  background: var(--neutral-color);
+  color: var(--main-color);
+}
+
+nav{
+  Display: Flex;
+  justify-content:space-around; 
+  align-items: center; 
+  color: var(--main-color);
+  font-family: var(--main-font);
+  /* padding-top: .5rem;
+  padding-bottom: .5rem; */
+  font-size: 2rem;
+}
+
+li{
+  list-style-type: none;
+  display: inline;
+  margin: 0.7rem;
+  font-weight: bold;
+  font-size:1.5rem ;
+}
+
+li a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+li a:hover{
+  color: var(--secondary-color);
+}
+
+
+.header{
+  background: url(pexels-eyad-tariq-2217318-3879495.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 45%;
+  height: 120vh;
+  /* text-align: center; */
+  font-family: var(--main-font);
+  color: fff;
+  /*Flexbox Stuff*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*padding-left: 2rem;*/
+  position:relative;
+
+}
+
+.main-heading {
+  position:absolute;
+  top: 0.5rem;
+  font-size: 6rem;
+  word-spacing: 0.5rem;
+}
+
+.primary-heading {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 5rem;
+  word-spacing: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.main-button {
+  position: absolute;
+  bottom: 4rem;
+}
+
+.content{
+  position: absolute;
+  bottom : 0rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin: 0.2rem;
+  font-size: 0.6rem;
+}
+
+/*Section*/
+
+#our-story{
+  /* height: 100vh; */
+  margin-top: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.img{
+  height: 600px;
+  width: 600px;
+  background: url(pexels-fariphotography-1254655.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+/* .img-container{
+  border: 2rem solid var(--secondary-color);
+  border-radius: 1rem;
+} */
+
+.title-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title{
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  font-size: 4rem;
+  /* transform: translateX(2.3rem); */
+  border-bottom: 0.2rem solid var(--main-color);
+}
+
+/* .line{
+  height: 1rem;
+  width: 4rem;
+  color: var(--main-color);
+  background: var(--main-color);
+  transform: translateX(-12rem);
+} */
+
+.section-content p{
+  padding-top: 2rem;
+  padding-bottom: 2rem; 
+  max-width: 36rem;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  line-height: 3rem;
+  margin: 0.2rem;
+  font-size: 1.5rem;
+}
+
+/*Coffee section*/
+
+.coffee-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.img2{
+  margin-top: 5%;
+  height: 600px;
+  width : 600px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.title-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.coffee-title{
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  font-size: 4rem;
+  /* transform: translateX(2.3rem); */
+  border-bottom: 0.2rem solid var(--main-color);
+}
+
+.coffee-content p{
+  padding-top: 2rem;
+  padding-bottom: 2rem; 
+  max-width: 45rem;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  line-height: 3rem;
+  /* margin: 0.2rem; */
+  font-size: 1.5rem;
+}
+
+/*PRODUCTS*/
+
+.products{
+  margin-top: 1rem;
+
+}
+
+.title-three{
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  font-size: 5rem;
+  border-bottom: 0.2rem solid var(--main-color);
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.product {
+ 
+  height: 900px;
+  width: 500px;
+  background-position: center;
+  background-size: cover;
+  border: .3rem solid var(--main-color);
+  padding: 10px 20px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.product-title{
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.product-img{
+  height: 480px;
+  width: 380px;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.product-content{
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-button{
+  padding:1rem 3rem;
+  background: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+/*Footer*/
+
+/* Footer Styling */
+footer {
+  background-color: #3B2314; /* Coffee Bean Brown */
+  color: #FCF6E6; /* Light Cream */
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #D9A86C; /* Golden Caramel */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #FCF6E6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #D9A86C;
+}
+
+.social-icons a {
+  color: #FCF6E6;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.social-icons a:hover {
+  color: #D9A86C;
+}
+
+input[type="email"] {
+  width: 80%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #D9A86C; /* Caramel */
+  color: #3B2314;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #B8854D; /* Darker Caramel */
+}
+
+.footer-bottom {
+  background-color: #2E1B10; /* Darker Brown */
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/*Responssiveness*/
+
+@media screen and (max-width: 768px) {
+
+  nav{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  nav ul li a{
+    font-size: 0.7rem;
+  }
+  .header{
+    height: 90vh;
+  }
+  .main-heading{
+    font-size: 4rem;
+  }
+  .primary-heading{
+    font-size: 3rem;
+  }
+  .main-button{
+    font-size: 1.5rem;
+  }
+  .content{
+    text-align: center;
+  }
+  #our-story{
+    text-align: center;
+  }
+  .img{
+    height: 400px;
+    width: 400px;
+  }
+  .title{
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+  .section-content p{
+    font-size: 1.2rem;
+  }
+  .coffee-container{
+    text-align: center;
+  }
+  .img2{
+    height: 400px;
+    width: 400px;
+    margin-top: 1rem;
+  }
+  .coffee-title{
+    font-size: 3rem;
+  }
+
+  .coffee-content p{
+    font-size: 1.2rem;
+  }
+  .product{
+    height: 720px;
+    width: 430px;
+  }
+  .product-title{
+    font-size: 2rem;
+  }
+  .product-img{
+    height: 380px;
+    width: 300px;
+  }
+  .product-content{
+    font-size: 1rem;
+  }
+  .product-button{
+    font-size: 1rem;
+  }
+  .footer-section h3{
+    font-size: 1.5rem;
+  }
+  .footer-section ul li{
+    font-size: 1.2rem;
+  }
+  .social-icons a{
+    font-size: 1.5rem;
+  }
+  input[type="email"]{
+    width: 70%;
+  }
+  button{
+    font-size: 1rem;
+  }
+  .footer-bottom{
+    font-size: 1rem;
+  }
+}
