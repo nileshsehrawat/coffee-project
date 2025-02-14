@@ -396,9 +396,7 @@ button:hover {
 @media screen and (max-width: 768px) {
 
   nav{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   nav ul li a{
     font-size: 0.7rem;
@@ -407,79 +405,88 @@ button:hover {
     height: 90vh;
   }
   .main-heading{
-    font-size: 4rem;
-  }
-  .primary-heading{
     font-size: 3rem;
   }
+  .primary-heading{
+    font-size: 2.5rem;
+  }
   .main-button{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .content{
     text-align: center;
+    font-size: 0.5rem;
   }
   #our-story{
     text-align: center;
   }
   .img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
   }
   .title{
-    font-size: 3rem;
-    padding-top: 1rem;
+    font-size: 2.5rem;
+    padding-top: 0.7rem;
   }
   .section-content p{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .coffee-container{
     text-align: center;
   }
   .img2{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin-top: 1rem;
   }
   .coffee-title{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .coffee-content p{
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .coffee-button{
+    margin: 5%;
+  }
+/*Products section*/
+  .products{
+    text-align: center;
   }
   .product{
-    height: 720px;
-    width: 430px;
+    height: 650px;
+    width: 350px;
   }
   .product-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .product-img{
-    height: 380px;
-    width: 300px;
+    height: 360px;
+    width: 320px;
   }
   .product-content{
-    font-size: 1rem;
+    font-size:1rem;
   }
   .product-button{
     font-size: 1rem;
   }
   .footer-section h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .footer-section ul li{
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
   .social-icons a{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   input[type="email"]{
-    width: 70%;
+    width: 60%;
   }
   button{
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .footer-bottom{
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
