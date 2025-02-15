@@ -1,0 +1,123 @@
+Creates html and css files.
+Write !Doctype -> Link the css file to the html file.
+Change the Title.
+
+<BODY>      In the body
+    <NAV>       Start with the navigation 
+        <H1>        provide a Heading                                               </H1>
+        <UL> <LI> Provide the Links for nav pages(HOME,MENU,ABOUT,CONTACT) </LI></UL> // ul>(li>a)*n
+    </NAV>
+    <HEADER class="">
+        <H1 class =""> Write headings with class names </H1>
+        Add buttons or stuff
+    </HEADER>
+
+    <SECTION id="">     Add sections
+        <DIV class="Image CONTAINER">
+            <DIV CLASS="image"> IMAGE </DIV>
+        </DIV>
+
+        <DIV CLASS ="CONTENT">
+            <DIV> CONTENT 
+                <SPAN CLASS="LINE"></SPAN>
+                <H1 CLASS="TITLE">OUR STORY</H1>
+            </DIV>
+        <P> LOREM 50 </P>
+        </DIV>
+    </SECTION>
+
+    Then comes another sections similarly
+    Last section will be the Footer section.
+</body>
+
+
+
+<------ STYLE.CSS --------------------------------------------------------------->
+
+@import font that we will be using in our websie.
+:root{  Write variables for the site like color and fonts }
+Give Utilities styles to components like buttons
+* {  Provide Resets to the Whole page }
+
+BODY{ Start with the body style 
+        Provide Background
+
+}
+
+NAV{
+    Provide Display say Flex
+    justify content 
+    align items
+    color
+    font
+    paddinf-top
+}
+
+LI{
+    Provid list items inline Display
+    Provide color
+    Text decoration to none
+
+    font-size:1.2rem ;
+    list-style-type: none;
+    display: inline;
+    padding: 0.7rem;
+    /* font-family: var(--secondary-font); */
+    font-weight: bold;
+}
+
+LI A{
+    Provid elist items style
+
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+LI A{
+    Add hover Effects to the naviatioal buttons
+    Like color
+    Boder bottom line 
+    Etc
+}
+
+/*Navigation stuff ends here*/
+
+/*Header stuff*/
+.header{
+    Select image Background
+    postion imagebagkground size
+    height 
+    font family
+
+    display flex and align
+}
+
+.heading-one{
+    position
+    top
+    font spacing
+    letter spacing    
+}
+
+.heading-two {
+    position
+    bottom
+    font spacing
+    letter spacing    
+}
+
+.button{
+    position:absolue;
+    bottom spacing
+}
+
+Keep syling sctions with the help of selectors
+Different sections can have different style and we can costumise the content according
+to our choise and liking.
+
+Last step is to make the site respoisive.
+
+Use @media queries to make the site responsive by changing the dimensions and etc.
+
+
+Project over.
